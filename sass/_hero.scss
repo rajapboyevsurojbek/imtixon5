@@ -1,0 +1,47 @@
+.hero {
+  background: #000;
+
+  &__wrapper {
+    color: #fff;
+    padding: 16px 278px 0px 64px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__information {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  &__info > p {
+    padding: 22px 0;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 60px;
+  }
+
+  &__shop {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 8px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .hero {
+    &__wrapper {
+      padding: 16px 16px 0px 16px;
+      flex-direction: column;
+    }
+    &__img > img {
+      width: 100%;
+    }
+  }
+}

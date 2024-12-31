@@ -1,0 +1,86 @@
+.products {
+  &__sercall {
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 672px;
+    padding-bottom: 60px;
+  }
+  &__sercall > span {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 4%;
+    text-shadow: 2px 2px aqua;
+  }
+  &__sercall__info > p {
+    padding-top: 16px;
+  }
+  &__control {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+  &__img {
+    background: #f5f5f5;
+    padding: 35px 0 35px 49px;
+    position: relative;
+  }
+
+  &__like {
+    top: 20px;
+    right: 20px;
+    position: absolute;
+  }
+  &__glaza {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+  }
+  &__price {
+    display: flex;
+    gap: 8px;
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+  &__price1 {
+    color: #db4444;
+    font-weight: 500;
+  }
+
+  &__price2 {
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  &__btn {
+    padding: 16px 48px 16px 48px;
+    border-radius: 4px;
+    background: #db4444;
+    color: #f5f5f5;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  &__btn__control {
+    text-align: center;
+    padding-bottom: 105px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .products {
+    &__control {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 0 16px;
+    }
+    &__sercall {
+      text-align: center;
+      padding: 10px 16px;
+    }
+    &__icon {
+      padding: 0 16px;
+    }
+  }
+}

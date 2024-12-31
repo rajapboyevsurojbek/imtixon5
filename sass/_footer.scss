@@ -1,0 +1,90 @@
+.footer {
+  background: #000000;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 60px 0 108px 0;
+    column-gap: 87px;
+    color: #fff;
+  }
+  &__search {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__search__form {
+    display: flex;
+    gap: 0;
+  }
+  &__search__form > input {
+    background: #000000;
+    padding: 7px 10px 7px 12px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #fff;
+    color: #fff;
+  }
+  &__search__form > button {
+    border-radius: 0 5px 5px 0;
+    background: #000000;
+    border: 1px solid #fff;
+    padding: 4px 6px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: left;
+  }
+  &__list__item > a {
+    color: #fff;
+  }
+  &__download {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  &__dowloand > span {
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    padding-top: 24px;
+  }
+  &__dowloand__img {
+    display: flex;
+  }
+  &__dowloand__icon {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    gap: 24px;
+  }
+  &__line {
+    color: #fff;
+    display: flex;
+    border-top: 1px solid #fff;
+    padding-top: 16px;
+    gap: 6px;
+    padding-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .footer {
+    &__wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 60px 0 108px 16px;
+      gap: 40px;
+      color: #fff;
+    }
+    &__dowloand__img {
+      gap: 6px;
+      padding-top: 8px;
+    }
+    &__dowloand__img-control {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}

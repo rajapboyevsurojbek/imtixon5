@@ -1,0 +1,69 @@
+.featured {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__info > span {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  &__info > img {
+    width: 110px;
+    height: 60px;
+  }
+
+  &__control {
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+  &__card {
+    background: #000;
+    color: aliceblue;
+    position: relative;
+    border-radius: 5px;
+    padding: 89px 30px 0 29px;
+  }
+
+  &__card__text {
+    display: flex;
+    z-index: 100;
+    bottom: 32px;
+    left: 32px;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+  }
+  &__card__text > h3 {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__card__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    ruby-span: calc(2);
+    column-gap: 30px;
+  }
+  &__card__control2 {
+    display: flex;
+    gap: 24px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 890px) {
+  .featured {
+    &__control {
+      flex-direction: column;
+    }
+  }
+}

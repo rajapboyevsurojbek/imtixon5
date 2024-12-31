@@ -1,0 +1,31 @@
+.admin {
+  &__wrapper {
+    padding: 140px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__card > h4 {
+    padding-top: 24px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  &__card > span {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .admin {
+    &__wrapper {
+      flex-direction: column;
+    }
+  }
+}
