@@ -26,20 +26,6 @@
     padding-bottom: 70px;
   }
 
-  &__control::-webkit-scrollbar {
-    height: 0;
-  }
-  &__card {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 25px 57px;
-    border-radius: 5px;
-    border: 2px solid #0000004d;
-    transition: 0.8s ease-in-out;
-    cursor: pointer;
-  }
-
   &__card:hover {
     background: #db4444;
     color: #fff;

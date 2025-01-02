@@ -111,7 +111,7 @@ btnSeemore.addEventListener("click", () => {
   createLoading(perPageCount);
   offset++;
 
-  window.scrollTo(0, document.documentElement.scrollHeight);
+  // window.scrollTo(0, document.documentElement.scrollHeight);
 
   fetchData(
     `${productEndpoint}?limit=${perPageCount}&skip=${offset * perPageCount}`
